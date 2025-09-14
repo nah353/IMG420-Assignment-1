@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://b5l6jpr8gmxh3"]
+
+[ext_resource type="Script" uid="uid://cb5scxowp70wx" path="res://player.gd" id="1_sweqy"]
+[ext_resource type="Texture2D" uid="uid://d2c7xc2vwh6pt" path="res://space_game_2d_assets/effect_yellow.png" id="2_i3pqv"]
+[ext_resource type="Texture2D" uid="uid://mn6dwpmqsj31" path="res://space_game_2d_assets/ship_E.png" id="2_onrkg"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_i3pqv"]
+radius = 18.0
+height = 48.0
+
+[node name="Player" type="Area2D"]
+collision_layer = 2
+collision_mask = 5
+script = ExtResource("1_sweqy")
+metadata/_edit_group_ = true
+
+[node name="Boost" type="Sprite2D" parent="."]
+modulate = Color(0.8509804, 0.7176471, 0, 1)
+z_index = -1
+texture = ExtResource("2_i3pqv")
+offset = Vector2(0, 40)
+
+[node name="Ship" type="Sprite2D" parent="."]
+self_modulate = Color(1, 0.5372549, 1, 1)
+texture = ExtResource("2_onrkg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(0, 3)
+shape = SubResource("CapsuleShape2D_i3pqv")
+
+[node name="FiringPoint" type="Marker2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(0, -25)
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

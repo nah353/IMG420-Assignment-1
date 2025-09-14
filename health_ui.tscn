@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bt2gjgv746p3h"]
+
+[ext_resource type="Texture2D" uid="uid://mn6dwpmqsj31" path="res://space_game_2d_assets/ship_E.png" id="1_tt5l4"]
+
+[node name="TextureRect" type="TextureRect"]
+modulate = Color(0.5137255, 0, 0.003921569, 1)
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_tt5l4")
+flip_v = true
