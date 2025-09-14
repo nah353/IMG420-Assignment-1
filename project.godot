@@ -10,8 +10,8 @@ config_version=5
 
 [application]
 
-config/name="Vampire Survivors-like demo"
-run/main_scene="uid://b5l6jpr8gmxh3"
+config/name="Meteor Survivors (demo)"
+run/main_scene="uid://fudoh8bjbjlb"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
