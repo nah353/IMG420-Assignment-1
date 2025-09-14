@@ -9,5 +9,5 @@ Make sure to run the main (main.tscn) scene to play the game.
 Hud includes life count (top left), survival timer (top middle), and experience level (top right).
 
 Assets used: 
-Godot's Your first game tutorial - "Dodge the Creeps!" (audio files)
-https://kenney.nl/assets/simple-space (sprites)
+- Godot's Your first game tutorial - "Dodge the Creeps!" (audio files)
+- https://kenney.nl/assets/simple-space (sprites)
